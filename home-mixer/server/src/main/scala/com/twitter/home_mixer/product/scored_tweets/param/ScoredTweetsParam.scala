@@ -66,7 +66,7 @@ object ScoredTweetsParam {
   object EnableContentExplorationCandidatePipelineParam
       extends FSParam[Boolean](
         name = "scored_tweets_enable_content_exploration_candidate_pipeline",
-        default = true
+        default = false
       )
 
   object ContentExplorationCandidateVersionParam
@@ -463,7 +463,7 @@ object ScoredTweetsParam {
   object OutOfNetworkScaleFactorParam
       extends FSBoundedParam[Double](
         name = "scored_tweets_out_of_network_scale_factor",
-        default = 1.0,
+        default = 0.75,
         min = 0.0,
         max = 100.0
       )
