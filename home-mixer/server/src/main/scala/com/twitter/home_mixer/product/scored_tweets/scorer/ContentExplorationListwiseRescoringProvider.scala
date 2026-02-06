@@ -26,7 +26,7 @@ object ContentExplorationListwiseRescoringProvider
         servedType == hmt.ServedType.ForYouContentExploration ||
         servedType == hmt.ServedType.ForYouContentExplorationTier2 ||
         servedType == hmt.ServedType.ForYouContentExplorationDeepRetrievalI2i ||
-        servedType == hmt.ServedType.ForYouContentExplorationTier2DeepRetrievalI2i) 0.1
+        servedType == hmt.ServedType.ForYouContentExplorationTier2DeepRetrievalI2i) 0.01
       else 1.0
     } else 1.0
   }
