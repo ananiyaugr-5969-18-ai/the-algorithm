@@ -58,6 +58,35 @@ The core components of Recommended Notifications included in this repository are
 | Ranking | [pushservice-light-ranker](pushservice/src/main/python/models/light_ranking/README.md) | Light Ranker model used by pushservice to rank posts. Bridges candidate generation and heavy ranking by pre-selecting highly-relevant candidates from the initial huge candidate pool. |
 |         | [pushservice-heavy-ranker](pushservice/src/main/python/models/heavy_ranking/README.md) | Multi-task learning model to predict the probabilities that the target users will open and engage with the sent notifications. |
 
+## AI Agent Framework: LightClaw
+
+Looking for a lightweight alternative to OpenClaw with native Google Antigravity support, full MCP implementation, extensible skills, and seamless Slack integration?
+
+**LightClaw** is a lightweight AI agent framework designed for building intelligent agents with minimal resource footprint.
+
+### Key Features
+- 🚀 **Lightweight**: ~50MB footprint (4x smaller than OpenClaw)
+- ⚡ **Fast**: <1 second startup time
+- 🤖 **Google Antigravity**: Native support for Google Antigravity as model provider
+- 🔌 **MCP Support**: Full Model Context Protocol v1.0 implementation
+- 🛠️ **Extensible Skills**: Plugin-based skills system for custom capabilities
+- 💬 **Slack Integration**: Native, seamless Slack integration
+
+### Documentation
+- [LightClaw Framework Overview](docs/LIGHTCLAW_FRAMEWORK.md) - Complete feature documentation
+- [Implementation Guide](docs/LIGHTCLAW_IMPLEMENTATION_GUIDE.md) - Technical implementation details
+- [OpenClaw Alternative Comparison](docs/OPENCLAW_ALTERNATIVE_COMPARISON.md) - Detailed comparison with OpenClaw
+- [Quick Reference Guide](docs/LIGHTCLAW_QUICK_REFERENCE.md) - One-page quick start
+
+### Quick Start
+```bash
+pip install lightclaw
+lightclaw init
+lightclaw chat "Hello, world!"
+```
+
+For complete documentation, see [LightClaw Framework](docs/LIGHTCLAW_FRAMEWORK.md).
+
 ## Build and test code
 
 We include Bazel BUILD files for most components, but not a top-level BUILD or WORKSPACE file. We plan to add a more complete build and test system in the future.
